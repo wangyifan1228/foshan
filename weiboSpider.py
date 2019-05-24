@@ -19,9 +19,9 @@ class Weibo:
 
     def __init__(self, user_id, filter=0):
         """Weibo类初始化"""
-        self.user_id = user_id  # 用户id，即需要我们输入的数字，如昵称为“Dear-迪丽热巴”的id为1669879400
+        self.user_id = 2568535032 用户id，即需要我们输入的数字，如昵称为“Dear-迪丽热巴”
         self.filter = filter  # 取值范围为0、1，程序默认值为0，代表要爬取用户的全部微博，1代表只爬取用户的原创微博
-        self.username = ''  # 用户名，如“Dear-迪丽热巴”
+        self.username = ''  # 用户名，如“Dear-迪丽热巴
         self.weibo_num = 0  # 用户全部微博数
         self.weibo_num2 = 0  # 爬取到的微博数
         self.following = 0  # 用户关注数
