@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 
 class Weibo:
-    cookie = {"Cookie": "your cookie"}  # 将your cookie替换成自己的cookie
+    cookie = {"Cookie": "your cookie"}  z# 将your cookie替换成自己的cookie
 
     def __init__(self, user_id, filter=0):
         """Weibo类初始化"""
