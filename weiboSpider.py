@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
 import codecs
@@ -15,13 +15,13 @@ from tqdm import tqdm
 
 
 class Weibo:
-    cookie = {"Cookie": "your cookie"}  z# 将your cookie替换成自己的cookie
+    cookie = {"Cookie": "SUB=_2A25x7GT3DeRhGedL4lYS8CzKzz2IHXVTLwy_rDV6PUJbkdAKLVTlkW1NVFnoY4o31QW8dbMMysVo0OGizQPSf6Ny; SUHB=0h1YyjnBO05DVd; SCF=AovhIJNXFtruB2Hg3tCvfmB3H1TU2FrmQzNYxWcyZjLKNB6y-_KxsHcdW99iZT3-_bY4uP6nSin-LwnFKtI62RM.; SSOLoginState=1558713511; MLOGIN=1; _T_WM=57217435748; WEIBOCN_FROM=1110006030; M_WEIBOCN_PARAMS=uicode%3D20000174"}  # 将your cookie替换成自己的cookie
 
     def __init__(self, user_id, filter=0):
         """Weibo类初始化"""
-        self.user_id = 2568535032 用户id，即需要我们输入的数字，如昵称为“Dear-迪丽热巴”
+        self.user_id = user_id  # 用户id，即需要我们输入的数字，如昵称为“Dear-迪丽热巴”的id为1669879400
         self.filter = filter  # 取值范围为0、1，程序默认值为0，代表要爬取用户的全部微博，1代表只爬取用户的原创微博
-        self.username = ''  # 用户名，如“Dear-迪丽热巴
+        self.username = ''  # 用户名，如“Dear-迪丽热巴”
         self.weibo_num = 0  # 用户全部微博数
         self.weibo_num2 = 0  # 爬取到的微博数
         self.following = 0  # 用户关注数
